@@ -1,0 +1,58 @@
+.navbar-nav{
+  .nav-item{
+    .nav-link{
+      &:hover{
+        transition: all .4s;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.container-xxl.mg-top-children{
+  .row{
+    .bd-example.d-flex.flex-column.flex-lg-row{
+      .tab-content{
+        width: 100%;
+        height: auto;
+      }
+
+      .col-lg-3{
+        .nav.nav-tabs.flex-column{
+          .nav-tab-medic{
+            background-color: inherit;
+            border: none;
+            padding: 10px 15px;
+          }
+
+          .active{
+            border-left: 4px solid $primary;
+            background-color: $info;
+            color: $primary;
+            transition: all .2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar.navbar-expand-md.bg-white{
+  .container-xxl{
+    .logo-medicio{
+      width: 91px;
+      height: 40px;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .row{
+    .bd-example.d-flex.flex-column.flex-lg-row{
+      .tab-content{
+        width: 75%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.icon{
+  width: 50px;
+  height: 50px;
+  color: $primary;
+}
+
+.icon-sm{
+  width: 20px;
+  height: 20px;
+}
+
+.icon-md{
+  min-width: 20px;
+  max-height: 20px;
+  color: $primary;
+  background-color: $white;
+}
+
+.icon-lg{
+  width: 35px;
+  height: 35px;
+  color: $primary;
+  background-color: $white;
+  display: inline-block;
+}
+
+.icon-group{
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  @include border-radius(10%);
+}
+
+.icon-circle{
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  box-shadow: var(--bs-box-shadow);
+  color: $primary;
+  background-color: white;
+  @include border-radius(50%);
+}
+
+.icon-contact{
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 0 auto;
+  color: $primary;
+  border: 2.5px dotted $primary;
+  @include border-radius(50%);
+}
+
+.min-hr{
+  border: 2px solid $primary;
+  width: 60px;
+}
+
+.person-medicio{
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  top: -50px;
+  left: 50%;
+  @include transform(translateX(-50%));
+  @include border-radius(50%);
+  background-color: $white;
+  z-index: 2;
+}
+
+.scroll-top{
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary;
+  color: $white;
+  position: fixed;
+  @include border-radius(10%);
+  border: 1px solid $white;
+  bottom: 60px;
+  right: 3%;
+  z-index: 200;
+  transition: all .5s;
+
+  &:hover{
+    background-color: $white;
+    border: 1px solid $primary;
+    color: $primary;
+  }
+}
+
+.scroll-top a{
+    width: 100%;
+    height: 100%;
+}

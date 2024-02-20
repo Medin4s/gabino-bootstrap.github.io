@@ -1,0 +1,93 @@
+p,
+button,
+li,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+picture{
+  width: 100%;
+  height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+form{
+  margin-bottom: 0px;
+}
+
+.mg-top-children{
+  > * + *{
+    margin-top: 20px;
+  }
+}
+
+.img-medicio{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.contains-titles{
+  text-align: center;
+
+  &::after{
+    width: 100px;
+    height: 100px;
+  }
+
+  h2{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  li,
+  ul{
+    list-style: none;
+  }
+
+  hr{
+    width: 50%;
+    border: none;
+    height: 3px;
+    margin: 10px auto 0;
+    opacity: 1;
+  }
+}
+
+a{
+  color: currentColor;
+}
+
+svg{
+  width: 100%;
+  height: 100%;
+}
+
+iframe{
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.margin-none{
+  margin: 0;
+}
+
+.padding-none{
+  padding: 0;
+}

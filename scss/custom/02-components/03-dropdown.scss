@@ -1,0 +1,15 @@
+.dropdown-menu{
+  .dropdown-item{
+    @include rem(12);
+  }
+}
+
+.laboratory{
+  .laboratory-ul{
+    .laboratory-li{
+      &:nth-child(n+2){
+        margin-top: 35px;
+      }
+    }
+  }
+}
